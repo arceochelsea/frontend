@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 50px;
+        /* background-color: rgb(183, 255, 183); */
+        justify-content: center;
+        /* align-items: flex-end; */
+        align-items: stretch;
+        margin-bottom: 1px;
+    }
+
+    .flex-container > div {
+        /* background-color: rgb(247, 195, 203); */
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 20px;
+        height: 20px;
+        font-size: 10px;
+
+    }
+
+    .hero-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        /* background-color: rgb(183, 255, 183); */
+        justify-content: center;
+        /* align-items: flex-end; */
+        align-items: center;
+    }
+
+    .hero-container > div {
+        /* background-color:  rgb(247, 195, 203); */
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        line-height: 275px;
+        height: 275px;
+        font-size: 30px;
+    }
+
+    .cards {
+        display: flex;
+        margin: 0px 5px 0px 5px;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 32%;
+        margin: 10px 10px 0px 10px;
+        text-align: center;
+        height: 100px;
+        background: rgb(231, 231, 231);
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class='flex-container'>
+        <div style='flex-grow: 1'><img src='https://i.picsum.photos/id/1018/100/25.jpg'></div>
+        <div style='flex-grow: 1'></div>
+        <div style='flex-grow: 1'>Features</div>
+        <div style='flex-grow: 1'>Prices</div>
+        <div style='flex-grow: 1'>Resources</div>
+        <div style='flex-grow: 1'>Enterprise</div>
+        <div style='flex-grow: 1'>Blog</div>
+
+        <!-- <div>4</div> -->
+        <!-- <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div> -->
+    </div>
+
+    <div class='hero-container'>
+        <div><img src='https://i.picsum.photos/id/1018/800/250.jpg' style='width:100%'>
+        </div>
+    </div>
+
+    <div class='flex-cards'>
+        <section class='cards'>
+
+            <article class='card'>
+                <p>Card 1</p>
+            </article>
+
+            <article class='card'>
+                <p>Card 2</p>
+            </article>
+
+            <article class='card'>
+                <p>Card 3</p>
+            </article>
+
+        </section>
+    </div>
+
+    <!-- <img src='https://i.picsum.photos/id/1018/400/200.jpg'> -->
+</body>
+</html>
