@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    .flex-box {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 50px;
+        /* background-color: rgb(183, 255, 183); */
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 1px;
+        position: relative;
+    }
+
+    .cards {
+        display: flex;
+        margin: 0px 1px 0px 1px;
+        height: 150px;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .card {
+        flex: 0 1 32%;
+        margin: 10px 10px 0px 10px;
+        text-align: center;
+        height: 500px;
+        width: 500px;
+        background: rgb(252, 250, 250);
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    /* #footer {
+        display: flex; */ 
+        /* /* text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        align-content: center;
+        flex-direction: row;
+        position: relative;
+        height: 20px;
+        width: 50px;
+    }  */
+
+    #header {
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 50px;
+        /* background-color: rgb(183, 255, 183); */
+        justify-content: center;
+        /* align-items: flex-end; */
+        align-items: stretch;
+        margin-bottom: 1px;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class='flex-container'>
+        <div style='flex-grow: 1'><img src='https://i.picsum.photos/id/1018/100/25.jpg'></div>
+        <div style='flex-grow: 1'></div>
+        <div style='flex-grow: 1'>Features</div>
+        <div style='flex-grow: 1'>Prices</div>
+        <div style='flex-grow: 1'>Resources</div>
+        <div style='flex-grow: 1'>Enterprise</div>
+        <div style='flex-grow: 1'>Blog</div>
+    </div>
+
+    <div id='header'>
+        <h1 id='hotelName'>header</h1>
+        <h3 id='hotelSlogan'>slogan</h4>
+        <!-- <p>Available Rooms:</p>
+        <div id='dropDown'></div> -->
+    </div>
+
+    <div class='flexBox'>
+    <section class='cards'>
+    <article class='card'>
+        <img src="https://i.picsum.photos/id/1029/700/500.jpg">
+        <p><em>Double Rooms</em></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt incidunt vel voluptatibus quibusdam ex nihil veritatis et alias adipisci vitae corrupti officia assumenda officiis, sapiente sunt tempora! Possimus, dicta!</p>
+    </article>
+
+    <article class='card'>
+        <img src="https://i.picsum.photos/id/1040/700/500.jpg">
+        <p><em>Queen Rooms</em></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nisi provident minus! Officiis id repellendus vel autem nemo perspiciatis a, quidem porro nobis culpa, suscipit sapiente eligendi, facere incidunt exercitationem.</p>
+    </article>
+
+    <article class='card'>
+        <img src="https://i.picsum.photos/id/142/700/500.jpg">
+        <p><em>King Rooms</em></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nemo, numquam ducimus impedit culpa aut? Natus quae tenetur a, odit illo vel, eaque exercitationem dolore veniam, et excepturi corrupti distinctio.</p>
+    </article>
+    </section>
+    </div>
+
+    <div id='footer'>
+        <div id='dropDown'></div>
+        <input type='date'>
+        <input type="submit">
+    </div>
+
+
+
+    <script src='hotelflex.js'></script>
+    
+</body>
+</html>
+
+
