@@ -6,6 +6,8 @@
     <title>Document</title>
 
 <style>
+
+
         body {
           text-align: center;
           font-family: "Helvetica", sans-serif;
@@ -14,7 +16,7 @@
           font-size: 2em;
           font-weight: bold;
         }
-        .infoBox {
+        #dataOutput {
           border-radius: 5px;
           background-color: #eee;
           padding: 20px 5px;
@@ -29,21 +31,19 @@
         button:hover {
           background-color: #0F5897;
           border: 1px solid #0F5897;
-        }
-</style>   
-    
+        }    
+</style> 
+
 </head>
 <body>
-    
-    <script src='apiPractice2.js'></script>
+    <script src='starWarsAPI.js'></script>
 
-    <h1>Pokemon Info:</h1>
-    <p class="infoBox">
-      Pokemon Information Will Display Here
-    </p>
-    <p>
-      <button id="getInfo">Get Information</button>
-    </p>
+    <h1>Star Wars Info:</h1>
+    <div id='dataOutput'>Star Wars Info Here!</div>
+    <button id='button'>Click Me!</button>
+
+
+
 
 </body>
 </html>
