@@ -24,7 +24,22 @@ function loadText() {
     xml.onload = function () {
         if (this.readyState === 4 && this.status === 200) {
             const json = JSON.parse(this.responseText);
-            document.getElementById('dataOutput').innerHTML = JSON.stringify(json)
+
+            const jsonArrayKey = Object.keys(json)
+            const jsonArrayVal = Object.values(json)
+            //document.getElementById('dataOutput').innerHTML = json.name;
+
+            let html = '<ul>'
+            for (let i = 0; i < jsonArrayKey.length; i++) {
+                html += `<li>${jsonArrayKey[i]}: ${jsonArrayVal[i]}</li>`
+            }
+            html = html + '<ul>'
+            document.getElementById('dataDetail').innerHTML = html;
+
+            //this will display just the name of starwars character
+            // let html = `<ul><li>${json.name}</li></ul>`; 
+            // document.getElementById('dataOutput').innerHTML = html;
+            //document.getElementById('dataOutput').innerHTML = JSON.stringify(json);
         } else if (this.status === 404) {
             document.getElementById('dataOutput').innerHTML = '404 Error: File Not Found!';
         }
